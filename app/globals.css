@@ -1,7 +1,6 @@
 :root {
   --font-size: 16px;
   --line-height: 20px;
-
   --spacing-large: 32px;
   --spacing-medium: 16px;
   --spacing-small: 8px;
@@ -9,8 +8,8 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #ffffff;
-    --foreground: #0000ff;
+    --background: #fff;
+    --foreground: #00f;
   }
 
   html {
@@ -20,8 +19,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0000ff;
-    --foreground: #ffffff;
+    --background: #00f;
+    --foreground: #fff;
   }
 
   html {
@@ -41,10 +40,12 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  max-width: 1080px;
-  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 100dvh;
   padding: var(--spacing-large) var(--spacing-medium);
   font-family: "Geist Mono", monospace;
   font-optical-sizing: auto;
@@ -52,10 +53,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-footer {
-  display: none;
-  flex-direction: row;
-  justify-content: space-between;
+main {
+  flex: 1;
 }
 
 h1,
@@ -69,7 +68,6 @@ a {
 h1,
 h2 {
   display: inline-block;
-  margin-left: var(--spacing-medium);
   background-color: var(--foreground);
   color: var(--background);
   margin-bottom: var(--spacing-small);

@@ -33,10 +33,10 @@ export default function Home() {
         </section>
 
         <section className={styles.biography}>
-          <h2># Biografie</h2>
+          <h2># Über</h2>
           <p>
-            Hallo, ich bin Mediamatiker EFZ mit Abschluss bei Swisscom. Aktuell
-            arbeite ich beim{" "}
+            Hallo, ich bin Liam, Mediamatiker EFZ mit Abschluss bei Swisscom.
+            Aktuell arbeite ich beim{" "}
             <a
               href="https://stv-fsg.ch"
               target="_blank"
@@ -44,13 +44,13 @@ export default function Home() {
             >
               Schweizerischen Turnverband
             </a>
-            . Mein Fokus liegt vor allem auf Grafikdesign. Ich arbeite
+            . Mein Fokus liegt dort vor allem auf Grafikdesign. Ich arbeite
             strukturiert, teamorientiert und lerne gerne Neues.
           </p>
         </section>
         <section className={styles.contact}>
           <h2># Kontakt</h2>
-          <div className={styles.contactLinks}>
+          <div className={styles["contact-links"]}>
             <p>
               <a
                 href="mailto:liam.schenk@bluewin.ch"
@@ -82,9 +82,8 @@ export default function Home() {
 
       <footer>
         <p>
-          {weekday}, {date}
+          {weekday}, {time}
         </p>
-        <p>{time}</p>
       </footer>
     </>
   );
