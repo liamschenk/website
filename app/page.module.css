@@ -1,0 +1,15 @@
+.intro,
+.biography,
+.contact {
+  margin-bottom: var(--spacing-large);
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.divider {
+  font-family: "Geist Mono", monospace;
+  overflow-x: hidden;
+}

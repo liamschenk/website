@@ -1,0 +1,81 @@
+:root {
+  --font-size: 16px;
+  --line-height: 20px;
+
+  --spacing-large: 32px;
+  --spacing-medium: 16px;
+  --spacing-small: 8px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #0000ff;
+  }
+
+  html {
+    color-scheme: light;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0000ff;
+    --foreground: #ffffff;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--spacing-large) var(--spacing-medium);
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+p,
+a {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+h1,
+h2 {
+  display: inline-block;
+  margin-left: var(--spacing-medium);
+  background-color: var(--foreground);
+  color: var(--background);
+  margin-bottom: var(--spacing-small);
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
